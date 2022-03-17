@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestNGUsingAnnotations.OrganizationTest">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="launchtheBrowser"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="closedb"/>
+          <include name="organizationTest"/>
+          <include name="connectToDataBase"/>
+        </methods>
+      </class> <!-- TestNGUsingAnnotations.OrganizationTest -->
+      <class name="TestNGUsingAnnotations.CreateContact">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="launchtheBrowser"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="contactsLinksTest"/>
+          <include name="closedb"/>
+          <include name="connectToDataBase"/>
+        </methods>
+      </class> <!-- TestNGUsingAnnotations.CreateContact -->
+      <class name="TestNGUsingAnnotations.LeadByAdvanceSearch">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="launchtheBrowser"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="closedb"/>
+          <include name="searchleadByAdvancesearch"/>
+          <include name="connectToDataBase"/>
+        </methods>
+      </class> <!-- TestNGUsingAnnotations.LeadByAdvanceSearch -->
+      <class name="TestNGUsingAnnotations.SearchLeadByClickingOnSalution">
+        <methods>
+          <include name="searchLeadByClickingOnSalution"/>
+          <include name="closebrowser"/>
+          <include name="launchtheBrowser"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="closedb"/>
+          <include name="connectToDataBase"/>
+        </methods>
+      </class> <!-- TestNGUsingAnnotations.SearchLeadByClickingOnSalution -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
