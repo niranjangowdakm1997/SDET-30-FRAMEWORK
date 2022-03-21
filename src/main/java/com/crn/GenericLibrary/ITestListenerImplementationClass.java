@@ -14,6 +14,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 public class ITestListenerImplementationClass implements ITestListener {
 	
 	ExtentReports report;
+	
 	ExtentTest test;
 
 public void onTestStart(ITestResult result) {
