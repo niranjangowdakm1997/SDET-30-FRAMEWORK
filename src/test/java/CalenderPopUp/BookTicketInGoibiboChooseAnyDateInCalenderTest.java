@@ -11,7 +11,6 @@ import org.testng.annotations.Test;
 public class BookTicketInGoibiboChooseAnyDateInCalenderTest {
 	
 	@Test
-	
 	public void bookTicketInGoibibo()
 	{
 		String MonthandYear="March 2022";
