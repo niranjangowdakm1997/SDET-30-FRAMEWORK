@@ -3,17 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestNGUsingAnnotations.OrganizationTest">
+      <class name="TestNGUsingAnnotations.SearchLeadByClickingOnSalution">
         <methods>
+          <include name="searchLeadByClickingOnSalution"/>
           <include name="closebrowser"/>
           <include name="launchtheBrowser"/>
           <include name="login"/>
           <include name="logout"/>
           <include name="closedb"/>
-          <include name="organizationTest"/>
           <include name="connectToDataBase"/>
         </methods>
-      </class> <!-- TestNGUsingAnnotations.OrganizationTest -->
+      </class> <!-- TestNGUsingAnnotations.SearchLeadByClickingOnSalution -->
       <class name="TestNGUsingAnnotations.CreateContact">
         <methods>
           <include name="closebrowser"/>
@@ -36,17 +36,17 @@
           <include name="connectToDataBase"/>
         </methods>
       </class> <!-- TestNGUsingAnnotations.LeadByAdvanceSearch -->
-      <class name="TestNGUsingAnnotations.SearchLeadByClickingOnSalution">
+      <class name="TestNGUsingAnnotations.OrganizationTest">
         <methods>
-          <include name="searchLeadByClickingOnSalution"/>
           <include name="closebrowser"/>
           <include name="launchtheBrowser"/>
           <include name="login"/>
           <include name="logout"/>
           <include name="closedb"/>
+          <include name="organizationTest"/>
           <include name="connectToDataBase"/>
         </methods>
-      </class> <!-- TestNGUsingAnnotations.SearchLeadByClickingOnSalution -->
+      </class> <!-- TestNGUsingAnnotations.OrganizationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

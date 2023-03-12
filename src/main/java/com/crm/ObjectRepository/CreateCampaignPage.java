@@ -9,7 +9,6 @@ import com.crn.GenericLibrary.WebDriverUtility;
 
 public class CreateCampaignPage extends WebDriverUtility{
 	
-	
 	//Declaration using FindBy
 	@FindBy(xpath = "//a[@href='javascript:;']")
 	private WebElement morelnk;

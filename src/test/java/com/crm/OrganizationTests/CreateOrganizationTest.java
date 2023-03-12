@@ -9,7 +9,6 @@ import com.crm.ObjectRepository.CreateOrganizationPage;
 import com.crm.ObjectRepository.HomePage;
 import com.crm.ObjectRepository.LoginPage;
 import com.crm.ObjectRepository.OrganizationImgPage;
-import com.crn.GenericLibrary.BaseClass;
 import com.crn.GenericLibrary.ExcelFileUtility;
 import com.crn.GenericLibrary.JavaUtility;
 import com.crn.GenericLibrary.PropertyFileUtility;

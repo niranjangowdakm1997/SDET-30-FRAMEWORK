@@ -17,6 +17,8 @@ import org.testng.annotations.Parameters;
 import com.crm.ObjectRepository.HomePage;
 import com.crm.ObjectRepository.LoginPage;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseClass {
 	
 	
@@ -36,7 +38,7 @@ public class BaseClass {
 	}
   
 	 @BeforeClass(groups = {"smoke suite","regression suite"})
-	//@Parameters("browser")
+	@Parameters("browser")
 	//@BeforeTest
 	public void launchtheBrowser() throws Throwable
 	{
@@ -47,12 +49,12 @@ public class BaseClass {
 		//create run time PolyMorphism
 		if(BROWSER.equalsIgnoreCase("chrome"))
 		{
-			//WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 		}
 		else if(BROWSER.equalsIgnoreCase("firefox"))
 		{
-			//WebDriverManager.firefox().setup();
+			WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
 		}
 		else
@@ -87,7 +89,7 @@ public class BaseClass {
 		Reporter.log("...logout is successfull...",true);
 	}
 	
-    @AfterClass(groups = {"smoke suite","regression suite"})
+   @AfterClass(groups = {"smoke suite","regression suite"})
 	//@AfterTest
 	public void closebrowser()
 	{
